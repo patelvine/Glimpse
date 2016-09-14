@@ -1,0 +1,121 @@
+body{
+  margin: 10px;
+}
+
+header{
+  height: 5%;
+  margin-bottom: 16px;
+  #icon{
+    display: inline-block;
+    align-self: center;
+    font-size: 30px;
+    margin-top: 5px;
+    float: right;
+  }
+  .inner-addon{
+    display: inline-block;
+    position: relative;
+    padding: 0px 5px 0px 5px;
+    width: 100%;
+    .glyphicon{
+      position: absolute;
+      padding: 10px 5px 10px 5px;
+      pointer-events: none;
+      left: 10px;
+      font-size: 20px;
+      color: #A8A8A8;
+    }
+    input{
+      padding-left: 40px;
+      height: 40px;
+      font-size: 18px;
+      color: #A8A8A8;
+      background-color: #EAEAEA;
+      border: none;
+      font-weight: 700;
+    }
+  } 
+  .dropdown{
+    position: relative;
+    display: inline-block;
+    padding: 3px 0px 0px 0px;
+  }
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  #wrapper{
+    width: 95%;
+    margin: auto;
+  }
+}
+
+
+.pin{
+  display: inline-block;
+  padding: 10px;
+  padding-bottom: 5px;
+  margin: 0;
+  transition: initial .2s ease;
+  a:link{
+    text-decoration: none;
+    color: black;
+  }
+  img{
+    width: 100%;
+  }
+  h3{
+    font-size: 12px;
+    font-weight: bold;
+  }
+  p{
+    font: 12px/18px Arial, sans-serif;
+    color: #333;
+  }
+}
+
+#columns{
+  -webkit-column-count: 1;
+  -webkit-column-fill: auto;
+  -moz-column-count: 1;
+  -moz-column-fill: auto;
+  column-count: 1;
+  column-fill: auto;
+  &:hover .pin:hover{
+    border-radius: 10px;
+    background-color: #EFEFEF;
+  }
+}
+
+@media (min-width: 490px){
+  #columns{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (min-width: 750px){
+  #columns{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (min-width: 970px){
+  #columns{
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media (min-width: 1170px){
+  #columns{
+    -webkit-column-count: 6;
+    -moz-column-count: 6;
+    column-count: 6;
+  }
+}

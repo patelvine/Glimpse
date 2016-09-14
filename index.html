@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Glimpse</title>
+        <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                    <span class="glyphicon glyphicon-eye-open" id="icon"></span>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                    <div class="inner-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                        <input type="text"
+                            class="form-control" 
+                            placeholder="Search" 
+                            id="searchTextField"/>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle"
+                        type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" 
+                        aria-expanded="false"> 
+                            <span class="glyphicon glyphicon-align-justify" aria-hidden="true" id="icon2"></span>
+                        </button>
+                        
+                        <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenuButton">
+                            <li role="presentation"><a role="menuitem" href="#">World</a></li>
+                            <li role="presentation"><a role="menuitem" href="#">Business</a></li>
+                            <li role="presentation"><a role="menuitem" href="#">Politics</a></li>
+                            <li role="presentation"><a role="menuitem" href="#">Technology</a></li>
+                            <li role="presentation"><a role="menuitem" href="#">Sports</a></li>
+                            <li role="presentation"><a role="menuitem" href="#">Entertainment</a></li>
+                            <li role="presentation"><a role="menuitem" href="#">Health</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row" id="articles">
+                <div id="wrapper">
+	                <div id="columns">
+                        <!-- js inputs articles here -->
+	                </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script>
+            $(document).ready( function(){
+                start();
+            });
+        </script> 
+    </body>
+</html>
